@@ -1,16 +1,45 @@
 ---
-
+import Logo from "../assets/axiomatic-light.svg";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+    <div class="flex justify-center py-6">
+        <div>
+            <Logo />
+        </div>
+        <span class="font-tektur font-bold text-4xl leading-12 tracking-tight">
+            xiomatic
+        </span>
+    </div>
+    <div class="flex justify-center gap py-6 px-2">
+        <article class="max-w-[65ch] flex flex-col gap-4 text-xl">
+            <p>
+                <strong>Axiomatic</strong> is a software company specializing in R&D
+                to build products that solve <strong>real</strong> problems.
+            </p>
+            <p>We work on the following projects:</p>
+            <ul class="list-disc list-inside">
+                <li>
+                    <a
+                        href="https://postoerp.com"
+                        class="text-blue-500 underline hover:text-blue-700"
+                    >
+                        PostoERP
+                    </a>
+                </li>
+            </ul>
+            <p>
+                We are an independent team with deep roots in the tech
+                community, backed by decades of engineering and product
+                experience.
+            </p>
+            <p>
+                Contact us via <a
+                    href="mailto:info@axiomatic.mk"
+                    class="text-blue-500 underline hover:text-blue-700">email</a
+                > if you have any questions.
+            </p>
+        </article>
+    </div>
+</Layout>
